@@ -31,17 +31,17 @@ const Panel1 = () => {
 
 	return (
 		<>
-			<Card className="mb-3 shadow-lg">
-				<Card.Body>
+			<Card className="mb-3 shadow">
+				<Card.Body className="shadow">
 					<Row className="justify-content-center">
 						<Col xs="auto">
 							<div className="user-active p-1">
-								<Link to="/profile" className="text-center text-primary my-3">
+								<Link to="/profile" className="text-center my-3">
 									<Avatar variant="rounded" alt="User Name" src="" className="large"></Avatar>
 								</Link>
 							</div>
 						</Col>
-						<Link to="/profile" className="text-center text-primary my-3">
+						<Link to="/profile" className="text-center text-info my-3">
 							User name
 						</Link>
 					</Row>
@@ -68,19 +68,19 @@ const Panel1 = () => {
 					<div className="mb-3">
 						<h6>Profile Completion</h6>
 						<LinearProgressWithLabel value={50} />
-						<a className="text-primary" href="#">
+						<a className="text-info" href="#">
 							<i className="fas fa-plus-square"></i>
 							<span className="ms-2">Add Testimonial +30%</span>
 						</a>
 					</div>
 					<h6>Proposals</h6>
-					<a className="text-primary" href="#">
+					<a className="text-info" href="#">
 						50 available connects
 					</a>
 				</Card.Body>
 			</Card>
-			<Sticky top="#topNav" innerActiveClass="mt-3" enabled={true} innerZ={1200} bottomBoundary="#main-content" className="shadow-lg">
-				<Card>
+			<Sticky top="#topNav" innerActiveClass="mt-3" enabled={true} innerZ={1200} bottomBoundary="#main-content" >
+				<Card className="shadow-lg">
 					<Card.Body>
 						<Row className="align-items-center">
 							<Col as="h5" className="mb-0">

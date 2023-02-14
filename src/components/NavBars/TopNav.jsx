@@ -303,9 +303,9 @@ const TopNav = () => {
 							{/* search input */}
 							<div className="position-relative">
 								<div className="position-absolute top-50 start-0 translate-middle-y ms-3 text-white">
-									<i className="fas fa-search"></i>
+									<i className="fas fa-search text-secondary"></i>
 								</div>
-								<FormControl className="bg-success ps-5 py-2 pe-2 text-white search-input border-0" placeholder="Search..." aria-label="Search..." aria-describedby="Search..." />
+								<FormControl className="bg-white ps-5 py-1 pe-5 text-white search-input border-0" placeholder="Search..." aria-label="Search..." aria-describedby="Search..." />
 							</div>
 						</Col>
 						<Col className="text-center">{navList}</Col>

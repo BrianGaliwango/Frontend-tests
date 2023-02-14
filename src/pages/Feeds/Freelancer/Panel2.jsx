@@ -17,7 +17,7 @@ const FeedCard = () => {
 			<Row className="g-0 justify-content-between">
 				<Col className="mb-2">
 					{/* Title */}
-					<h5 className="mb-1">Build responsive Website</h5>
+					<h6 className="mb-1">Build responsive Website</h6>
 					{/* Posted Time */}
 					<small className="text-gray-light">
 						<i className="fas fa-clock"></i>
@@ -38,12 +38,12 @@ const FeedCard = () => {
 			<Chip className="my-1 ms-0 me-2" icon={<SettingsIcon />} size="small" label="Intermediate"></Chip>
 			<Chip className="my-1 ms-0 me-2" icon={<AttachMoneyIcon />} size="small" label="Est. Budget: $400"></Chip>
 			{/* Description of the work */}
-			<p className="my-3">Hello I am looking for a web developer. Please see the attachment below for requirement. We can agree on to the proposal as soon as I determine your skills.</p>
+			<p className="my-2 " style={{fontSize: "11px"}}>Hello I am looking for a web developer. Please see the attachment below for requirement. We can agree on to the proposal as soon as I determine your skills.</p>
 			{/* Tags */}
 			<ChipGroup itemList={tags} color="primary" size="small" />
 			{/* Proposals submitted */}
-			<div className="my-2">
-				Proposals: <strong>Less than 5</strong>
+			<div className="my-2" >
+				Proposals: <strong style={{ fontSize: "10px"}}>Less than 5</strong>
 			</div>
 			<Row className="align-items-center">
 				<Col xs="auto">
