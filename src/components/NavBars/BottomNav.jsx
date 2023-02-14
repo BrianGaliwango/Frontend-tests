@@ -136,10 +136,10 @@ const BottomNav = () => {
 			transitionDuration={duration}
 			PaperProps={{ classes: { root: paperCss.root }, className: "m-2" }}
 		>
-			<SideNav itemsList={drawerItems} className="overflow-y-auto mb-auto p-3" />
+			{/* <SideNav itemsList={drawerItems} className="overflow-y-auto mb-auto p-3" /> */}
 
 			{/* user profile card */}
-			<div className="user-account-actions position-relative m-3 mt-2 p-3 pb-0 bg-primary-light rounded-3 overflow-hidden flex-shrink-0 rounded-4">
+			{/* <div className="user-account-actions position-relative m-3 mt-2 p-3 pb-0 bg-primary-light rounded-3 overflow-hidden flex-shrink-0 rounded-4">
 				{/* profile details */}
 				<Row className="g-3">
 					<Col xs="auto">
@@ -160,7 +160,7 @@ const BottomNav = () => {
 				<Button onClick={toggleCollapse} color="secondary" className="w-100 py-2 my-2" disableElevation>
 					{collapseControl ? <i className="fas fa-angle-double-down"></i> : <i className="fas fa-angle-double-up"></i>}
 				</Button>
-			</div>
+			{/* </div> */} 
 		</Drawer>
 	);
 
@@ -168,7 +168,7 @@ const BottomNav = () => {
 		<>
 			<div className="d-block d-md-none">
 				<div className="navbar jamNav-bottom bg-transparent position-fixed z-index-2000 bottom-0 start-0 end-0 p-0">
-					<div className="nav-mains bg-secondary flex-grow-1 d-flex justify-content-between align-self-end overflow-hidden">
+					<div className="nav-mains bg-primary flex-grow-1 d-flex justify-content-between align-self-end overflow-hidden">
 						{bNavItems.map((item) => {
 							const { title, icon, path } = item;
 							return (
@@ -211,7 +211,7 @@ const BottomNav = () => {
 				{renderDrawer}
 
 				{/* drawer close-menu */}
-				<div className="nav-menu-close position-fixed bottom-0 end-0 me-3 mb-3 z-index-2100">
+				{/* <div className="nav-menu-close position-fixed bottom-0 end-0 me-3 mb-3 z-index-2100">
 					<Zoom
 						in={menuButtons.closeZoom}
 						timeout={duration}
@@ -224,10 +224,10 @@ const BottomNav = () => {
 							<i className="fas fa-times p-3"></i>
 						</Fab>
 					</Zoom>
-				</div>
+				</div> */}
 			</div>
 
-			<SearchModal open={srModalOpen} onClose={modalClose} onClick={modalClose} />
+			{/* <SearchModal open={srModalOpen} onClose={modalClose} onClick={modalClose} /> */}
 		</>
 	);
 };

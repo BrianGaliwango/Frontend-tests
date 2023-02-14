@@ -11,7 +11,7 @@ import MessageList from "components/MessageList/MessageList";
 // icon button css
 const useStyles = makeStyles((theme) => ({
 	root: {
-		padding: "1rem",
+		// padding: "1rem",
 		fontSize: "1rem",
 		borderRadius: "0.5rem",
 	},
@@ -29,11 +29,11 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	smallAvatar: {
-		width: "2rem",
-		height: "2rem",
+		width: "1rem",
+		height: "1rem",
 	},
 	avatarButton: {
-		padding: "0.5rem",
+		padding: "0.2rem",
 		borderRadius: "0.5rem",
 	},
 	navLink: {
@@ -240,6 +240,7 @@ const ProfilePop = ({ classes }) => {
 						<div className="popper-notification bg-white bs-400">
 							<ProfilePopper popupClose={popupState.close} />
 						</div>
+						<></>
 					</NavPopper>
 				</>
 			)}
@@ -290,7 +291,7 @@ const TopNav = () => {
 
 	return (
 		<>
-			<AppBar position="fixed" color="primary" className="jamNav-top d-none d-md-block bs-400" id="topNav">
+			<AppBar position="fixed" color="primary" className="jamNav-top d-none d-md-block bs-400 p-0" id="topNav">
 				<Container fluid="lg" className="px-3 py-3">
 					<Row className="align-items-center">
 						<Col xs="auto">
@@ -304,7 +305,7 @@ const TopNav = () => {
 								<div className="position-absolute top-50 start-0 translate-middle-y ms-3 text-white">
 									<i className="fas fa-search"></i>
 								</div>
-								<FormControl className="ps-5 py-2 pe-2 text-white search-input border-0" placeholder="Search..." aria-label="Search..." aria-describedby="Search..." />
+								<FormControl className="bg-success ps-5 py-2 pe-2 text-white search-input border-0" placeholder="Search..." aria-label="Search..." aria-describedby="Search..." />
 							</div>
 						</Col>
 						<Col className="text-center">{navList}</Col>

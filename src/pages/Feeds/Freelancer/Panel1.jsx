@@ -31,7 +31,7 @@ const Panel1 = () => {
 
 	return (
 		<>
-			<Card className="mb-3">
+			<Card className="mb-3 shadow-lg">
 				<Card.Body>
 					<Row className="justify-content-center">
 						<Col xs="auto">
@@ -79,7 +79,7 @@ const Panel1 = () => {
 					</a>
 				</Card.Body>
 			</Card>
-			<Sticky top="#topNav" innerActiveClass="mt-3" enabled={true} innerZ={1200} bottomBoundary="#main-content">
+			<Sticky top="#topNav" innerActiveClass="mt-3" enabled={true} innerZ={1200} bottomBoundary="#main-content" className="shadow-lg">
 				<Card>
 					<Card.Body>
 						<Row className="align-items-center">

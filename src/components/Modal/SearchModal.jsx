@@ -32,9 +32,9 @@ const SearchModal = ({ open, onClose, onClick }) => {
 			aria-labelledby="form-dialog-title"
 			transitionDuration={duration}
 			className="rounded-0 z-index-2100"
-			PaperProps={{ className: "m-3 w-100 bg-transparent shadow-none", children: <h1>Hello</h1> }}
+			PaperProps={{ className: "m-3 w-100 shadow-none", children: <h1>Hello</h1> }}
 		>
-			<div className="bg-white shadow rounded-3">
+			<div className="bg-white rounded-3">
 				<DialogContent className="p-3">
 					<Form.Group as={Row} className="g-3">
 						<Col>

@@ -1,10 +1,11 @@
 import { createTheme } from "@material-ui/core/styles";
 
 export const globalCss = {
-	fontSize: "0.9rem",
+	fontSize: "0.8rem",
 	lineHeight: "1.5",
 	pTb: "0.375rem",
 	colorBody: "#fafbfe",
+	// colorBody: "#004d40",
 };
 
 const MaterialTheme = createTheme({
@@ -38,10 +39,12 @@ const MaterialTheme = createTheme({
 		primary: {
 			// main: "#00cad9",
 			main: "#004d40",
+			// main: "#ef6c00",
 			contrastText: "#fff",
 		},
 		secondary: {
-			main: "#2d6478",
+			// main: "#ff9800",
+			main: "#01579b",
 		},
 		tonalOffset: 0.1,
 	},
@@ -142,7 +145,7 @@ const MaterialTheme = createTheme({
 
 		MuiLinearProgress: {
 			root: {
-				height: "1rem",
+				height: "0.6rem",
 				borderRadius: "0.5rem",
 			},
 			bar: {

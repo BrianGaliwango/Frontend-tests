@@ -69,7 +69,7 @@ const Panel2 = () => {
 	return (
 		<>
 			{/* Search option */}
-			<Card body className="mb-3">
+			<Card body className="mb-3 shadow-lg">
 				<Form>
 					<InputGroup>
 						<FormControl placeholder="Search for Jobs" aria-label="Search for Jobs" aria-describedby="Search for Jobs" />
@@ -80,8 +80,8 @@ const Panel2 = () => {
 				</Form>
 			</Card>
 			{/* Tab buttons */}
-			<Sticky top="#topNav" innerActiveClass="sticky-active" enabled={true} innerZ={1200} bottomBoundary="#main-content">
-				<Card>
+			<Sticky top="#topNav" innerActiveClass="sticky-active" enabled={true} innerZ={1200} bottomBoundary="#main-content" className="shadow-sm rounded">
+				<Card className="shadow-sm">
 					<Card.Body className="p-0">
 						<Tabs value={value} onChange={tabChange} indicatorColor="primary" textColor="primary" aria-label="Feed Tabs">
 							<Tab label="My Feed" />
@@ -92,7 +92,7 @@ const Panel2 = () => {
 				</Card>
 			</Sticky>
 			{/* Tab panels */}
-			<Card className="mt-3">
+			<Card className="mt-3 shadow-lg">
 				<Card.Body className="side-indicator-root">
 					<FeedCard />
 					<hr />
