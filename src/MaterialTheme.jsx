@@ -5,7 +5,6 @@ export const globalCss = {
 	lineHeight: "1.5",
 	pTb: "0.375rem",
 	colorBody: "#fafbfe",
-	// colorBody: "#004d40",
 };
 
 const MaterialTheme = createTheme({
@@ -37,13 +36,10 @@ const MaterialTheme = createTheme({
 
 	palette: {
 		primary: {
-			// main: "#00cad9",
 			main: "#004d40",
-			// main: "#ef6c00",
 			contrastText: "#fff",
 		},
 		secondary: {
-			// main: "#ff9800",
 			main: "#01579b",
 		},
 		tonalOffset: 0.1,
